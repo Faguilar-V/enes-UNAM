@@ -21,23 +21,18 @@
 #Author: Fernando Rodrigo Aguilar Javier
 #Author email: faguilar@comunidad.unam.mx
 
-#Detalles del codigo --------------------------------------------------------------------
-#Solo es necesario cambiar el campo de la variable path para que pandas encuentre el path
-#--------------------------------------------------------
-#17361 sismos en total
-#--------------------------------------------------------
-#N° de sismos    mes
-#787             Enero
-#666             Febrero
-#7771            Marzo
-#8137            Abril
-#
-#Sabemos que el ultimo evento de feb esta en la posicion 1452 iniciando en 0 pues la suma de los eventos registrados
-#en enero y febrero da 1453 comenzando en 1.
-##################################%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%################################
 
-from numpy import load
+#Detalles del codigo --------------------------------------------------------------------
+
+
+##%###########################
+import pandas as pd
+
+def discretizacion(A, C):
+    
+    return v, H_v
 
 if __name__ == '__main__':
-    distance = load('distance.npy')
+    discretizacion(A, C)
+    
     

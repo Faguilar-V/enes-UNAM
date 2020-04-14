@@ -23,5 +23,17 @@
 
 
 #Detalles del codigo --------------------------------------------------------------------
+#Solo es necesario cambiar el campo de la variable path para que pandas encuentre el path
+#Datos clima
+##################################%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%################################
+import pandas as pd
+from numpy import save, array
 
-##################################%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%################################
+if __name__ == '__main__':
+    path = '/home/faguilar/git/enes-UNAM/geoestadistica/files/'
+    clima = pd.read_excel(path + 'datos_clima.xls').to_numpy()
+    arr_clima = []
+    for r in clima:
+        arr_clima.append([r[2], r[3], r[5]])
+    array(arr_clima)
+    save('datos', arr_clima)
